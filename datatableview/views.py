@@ -155,7 +155,7 @@ class DatatableMixin(MultipleObjectMixin):
                         field = resolve_orm_path(self.get_model(), component_name)
                         if field.choices:
                             # Query the database for the database value rather than display value
-                            choices = field.get_flatchoices()
+                            choices = field.flatchoices
                             length = len(choices)
                             database_values = []
                             display_values = []
